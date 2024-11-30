@@ -12,6 +12,10 @@ export default {
     colors: {
       primary: '#84a98c', 
       secondary: '#abc4b0', 
+      info:"#5c8465",
+      btcolor:"#4b6c52",
+      btcolorhover:"#3B5440",
+      hilight: "#324837",
     },
   },
   },

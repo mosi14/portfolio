@@ -2,7 +2,7 @@ import reactIcons from "../assets/icons/react.svg";
 import reduxIcons from "../assets/icons/redux.svg";
 import javascriptIcons from "../assets/icons/javascript.svg";
 import typescriptIcons from "../assets/icons/typescript.svg";
-import jQueryIcons from "../assets/icons/jQuery.svg";
+import jQueryIcons from "../assets/icons/jquery.svg";
 import tailwindIcons from "../assets/icons/tailwind.svg";
 import sqlIcons from "../assets/icons/sql.svg";
 import nodeIcons from "../assets/icons/node-js.svg";

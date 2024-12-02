@@ -7,7 +7,7 @@ export default function Projects() {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         <div className="bg-white shadow-md rounded p-4">
-          <h3 className="font-bold text-xl">Project Name</h3>
+          <h3 className="font-bold text-xl">E-Commerce web application</h3>
           <p className="text-gray-600 mt-2">
             Brief description of the project.
           </p>
@@ -21,7 +21,7 @@ export default function Projects() {
               Live Demo
             </a>
             <a
-              href="github-link"
+              href="https://github.com/mosi14/OnlineStore"
               target="_blank"
               rel="noreferrer"
               className="text-info hover:underline"

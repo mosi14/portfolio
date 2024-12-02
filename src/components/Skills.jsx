@@ -11,11 +11,14 @@ import expressIcons from "../assets/icons/express.svg";
 import dotnetIcons from "../assets/icons/dotnet.svg";
 import mongodbIcons from "../assets/icons/mongodb.svg";
 import bootstrapIcons from "../assets/icons/bootstrap.svg";
-import nextIcons from '../assets/icons/next.svg'
-import htmlIcons from '../assets/icons/html5.svg'
-import css3Icons from '../assets/icons/css3.svg'
+import nextIcons from "../assets/icons/next.svg";
+import htmlIcons from "../assets/icons/html5.svg";
+import css3Icons from "../assets/icons/css3.svg";
 
 export default function AboutMe() {
+  const box =
+    "py-4 rounded shadow   transform transition-transform duration-300 hover:scale-110";
+
   return (
     <div className="bg-white py-20 px-6 text-center">
       <div className="inline-block  m-auto ">
@@ -23,27 +26,27 @@ export default function AboutMe() {
         <div className="w-[90%] h-1 rounded bg-gradient-to-r from-info to-secondary m-auto"></div>
       </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
-      <div className=" py-4 rounded shadow ">
+        <div className={box}>
           <img src={htmlIcons} alt="HTML5 Logo" className="w-10 h-10 inline" />
           <p className="mt-2">HTML5</p>
         </div>
-        <div className=" py-4 rounded shadow ">
-          <img src={css3Icons} alt="CSS3 Logo" className="w-10 h-10 inline" />
+        <div className={box}>
+          <img src={css3Icons} alt="CSS3 Logo" className="w-10 h-10 inline " />
           <p className="mt-2">CSS3</p>
         </div>
-        <div className=" py-4 rounded shadow ">
+        <div className={box}>
           <img src={reactIcons} alt="React Logo" className="w-10 h-10 inline" />
           <p className="mt-2">React</p>
         </div>
-        <div className=" py-4 rounded shadow ">
+        <div className={box}>
           <img src={nextIcons} alt="Nextjs Logo" className="w-10 h-10 inline" />
           <p className="mt-2">Nextjs</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           <img src={reduxIcons} alt="Redux Logo" className="w-10 h-10 inline" />
           <p className="mt-2">Redux</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={javascriptIcons}
@@ -52,7 +55,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">JavaScript</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={typescriptIcons}
@@ -61,7 +64,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">TypeScript</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={jQueryIcons}
@@ -70,7 +73,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">jQuery</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           <img
             src={tailwindIcons}
             alt="Tailwind CSS Logo"
@@ -78,7 +81,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">Tailwind CSS</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={materialIcons}
@@ -87,7 +90,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">Material-UI</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           <img
             src={bootstrapIcons}
             alt="Bootstrap Logo"
@@ -95,7 +98,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">Bootstrap</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={nodeIcons}
@@ -104,7 +107,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">Node.js</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={expressIcons}
@@ -113,7 +116,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">Express</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={dotnetIcons}
@@ -122,7 +125,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">C# .Net</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={mongodbIcons}
@@ -131,7 +134,7 @@ export default function AboutMe() {
           />
           <p className="mt-2">MongoDB</p>
         </div>
-        <div className=" py-4 rounded shadow">
+        <div className={box}>
           {" "}
           <img
             src={sqlIcons}

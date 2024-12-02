@@ -1,7 +1,10 @@
 export default function Projects() {
   return (
-    <div className="bg-gray-100 py-20 px-6">
-      <h2 className="text-3xl font-bold text-center">Projects</h2>
+    <div className="bg-gray-100 py-20 px-6 text-center">
+      <div className="inline-block  m-auto ">
+        <h2 className="text-3xl font-bold ">Projects</h2>
+        <div className="w-[90%] h-1 rounded bg-gradient-to-r from-info to-secondary m-auto"></div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
         <div className="bg-white shadow-md rounded p-4">
           <h3 className="font-bold text-xl">Project Name</h3>
@@ -13,7 +16,7 @@ export default function Projects() {
               href="live-demo-link"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-info hover:underline"
             >
               Live Demo
             </a>
@@ -21,7 +24,7 @@ export default function Projects() {
               href="github-link"
               target="_blank"
               rel="noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-info hover:underline"
             >
               GitHub
             </a>

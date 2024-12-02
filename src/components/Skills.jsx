@@ -11,15 +11,33 @@ import expressIcons from "../assets/icons/express.svg";
 import dotnetIcons from "../assets/icons/dotnet.svg";
 import mongodbIcons from "../assets/icons/mongodb.svg";
 import bootstrapIcons from "../assets/icons/bootstrap.svg";
+import nextIcons from '../assets/icons/next.svg'
+import htmlIcons from '../assets/icons/html5.svg'
+import css3Icons from '../assets/icons/css3.svg'
 
 export default function AboutMe() {
   return (
-    <div className="bg-white py-20 px-6">
-      <h2 className="text-3xl font-bold text-center">Skills</h2>
+    <div className="bg-white py-20 px-6 text-center">
+      <div className="inline-block  m-auto ">
+        <h2 className="text-3xl font-bold ">Skills</h2>
+        <div className="w-[90%] h-1 rounded bg-gradient-to-r from-info to-secondary m-auto"></div>
+      </div>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-8 text-center">
+      <div className=" py-4 rounded shadow ">
+          <img src={htmlIcons} alt="HTML5 Logo" className="w-10 h-10 inline" />
+          <p className="mt-2">HTML5</p>
+        </div>
+        <div className=" py-4 rounded shadow ">
+          <img src={css3Icons} alt="CSS3 Logo" className="w-10 h-10 inline" />
+          <p className="mt-2">CSS3</p>
+        </div>
         <div className=" py-4 rounded shadow ">
           <img src={reactIcons} alt="React Logo" className="w-10 h-10 inline" />
           <p className="mt-2">React</p>
+        </div>
+        <div className=" py-4 rounded shadow ">
+          <img src={nextIcons} alt="Nextjs Logo" className="w-10 h-10 inline" />
+          <p className="mt-2">Nextjs</p>
         </div>
         <div className=" py-4 rounded shadow">
           <img src={reduxIcons} alt="Redux Logo" className="w-10 h-10 inline" />

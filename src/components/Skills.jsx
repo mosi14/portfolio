@@ -20,7 +20,7 @@ export default function AboutMe() {
     "py-4 rounded shadow   transform transition-transform duration-300 hover:scale-110";
 
   return (
-    <div className="bg-white py-20 px-6 text-center">
+    <div className="bg-white py-20 px-6 text-center container m-auto">
       <div className="inline-block  m-auto ">
         <h2 className="text-3xl font-bold ">Skills</h2>
         <div className="w-[90%] h-1 rounded bg-gradient-to-r from-info to-secondary m-auto"></div>

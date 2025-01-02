@@ -24,7 +24,13 @@ export default function Projects() {
 
         {/* weather forecast project */}
         {projects.map((project, index) => (
-          <div className="p-4 bg-white rounded-lg shadow-md ">
+          <div
+            key={index}
+            className={`p-4 bg-white rounded-lg shadow-md transition-all duration-1000 overflow-hidden ${
+              expandedCard === index ? "max-h-[1000px] " : "max-h-[500px] "
+            }`}
+          >
+            {/* Project Image */}
             <div>
               <img
                 className="shadow-sm rounded mb-4"
@@ -32,13 +38,19 @@ export default function Projects() {
                 alt={project.name}
               />
             </div>
+            {/* Project Name */}
             <h2 className="text-2xl font-bold text-primary mb-4 text-center">
               {project.name}
             </h2>
 
             {/* Features */}
+            {/* Conditional Expanded Content */}
             {expandedCard === index && (
-              <>
+              <div
+                className={`transition-opacity duration-1000 ease-in-out ${
+                  expandedCard === index ? "opacity-100" : "opacity-0"
+                }`}
+              >
                 {/* Description */}
                 {project.description !== "" && (
                   <div>
@@ -71,14 +83,8 @@ export default function Projects() {
                     </ul>
                   </>
                 )}
-              </>
+              </div>
             )}
-            <p
-              className="text-secondary text-center text-sm hover:cursor-pointer"
-              onClick={() => toggleCard(index)}
-            >
-              {expandedCard === index ? "Show Less" : "Show More"}
-            </p>
 
             {/* Demo and Code */}
             <div className="flex justify-between space-x-4">
@@ -89,6 +95,13 @@ export default function Projects() {
                 className="text-primary p-2 hover:bg-primary hover:text-white hover:rounded transition duration-300"
               >
                 <i className="fas fa-link text-3xl"></i>
+              </a>
+              {/* Expand/Collapse Button */}
+              <a
+                className="text-secondary p-2 hover:text-primary text-sm hover:cursor-pointer"
+                onClick={() => toggleCard(index)}
+              >
+                {expandedCard === index ? "Show Less" : "Show More"}
               </a>
               <a
                 href={project.viewCode}
